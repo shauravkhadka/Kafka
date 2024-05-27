@@ -1,0 +1,7 @@
+1. Kafka topic 'test2' created with 3 partitions.
+2. The producer sends 1000 messages per second with keys and random integer values between 0-100.
+3. The consumer receives messages, calculates and prints the average after every 10,000 records.
+4. Started one instance of the Kafka Producer.
+5. Started four instances of the Kafka Consumer.
+6. The consumers will print the average of the consumed messages after every 10,000 records. Each consumer instance might print slightly different averages due to the partitioning of messages.
+7. Producers and consumers do not print messages at the same frequency because the producer sends messages continuously at 1000 messages per second, while each consumer instance processes and prints averages independently after every 10,000 messages.
